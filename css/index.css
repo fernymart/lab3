@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+h1{
+  text-align: center;
+}
+
+.logo{
+  float: left;
+  padding-left: 7%;
+  padding-right: 1%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -12,3 +22,159 @@ body {
   width: 50px;
 }
 
+main{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer{
+  clear: both;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  padding: 10px 10px 0px 10px;
+}
+
+.product{
+  margin-top: 2%;
+  text-align: center;
+  border: solid 1px grey;
+  width: 30%;
+  justify-self: center;
+}
+
+.product i{
+  padding-top: 2%;
+  font-size: 5em;
+}
+
+.product p{
+  text-align: left;
+}
+
+.social{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: flex-end;
+}
+
+.social li{
+  font-size: 2em;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .hamburger{
+    display: none;
+  }
+
+  .navbar{
+    background: gray;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+  }
+
+
+  .menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+
+  /* .menu li{
+    display: inline-flex;
+    float: left;
+    padding-right: 2%;
+    text-align: end;
+    color: white;
+    
+  } */
+  
+  .menu li{
+    float: right;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .menu li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    text-align: end;
+  }
+
+  .navbar .hamburger { 
+    float: right;
+    display: block;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    text-align: end;
+    color: white;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .navbar{
+    background: gray;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .navbar .hamburger { 
+    float: right;
+    display: block;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    text-align: end;
+    color: white;
+  }
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .navbar{
+    background: gray;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+  }
+}
